@@ -1,0 +1,44 @@
+.imagestyle{
+    height: 370px;
+    width: 50%;
+    border-radius: 10%;
+    padding: 10px;
+   }
+/* Mobile-specific styles */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px; /* Slightly less padding for small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Shrink the title so it doesn't wrap weirdly */
+    }
+
+    /* Make inputs full width so they are easier to tap */
+    input[type="text"], 
+    input[type="password"], 
+    select {
+        width: 100%; 
+        box-sizing: border-box; /* Ensures padding doesn't break the width */
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    /* Make the submit button larger for easier finger tapping */
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    /* Increase spacing between radio options for better touch accuracy */
+    input[type="radio"] {
+        transform: scale(1.2);
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+}
